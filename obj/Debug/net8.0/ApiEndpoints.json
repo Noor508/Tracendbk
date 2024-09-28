@@ -1,0 +1,232 @@
+[
+  {
+    "ContainingType": "Tracendbk.Controllers.AchievementsController",
+    "Method": "GetAchievementById",
+    "RelativePath": "api/Achievements/AchievementbyId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.AchievementsController",
+    "Method": "AddAchievement",
+    "RelativePath": "api/Achievements/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "achievement",
+        "Type": "Tracendbk.Models.Achievement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.AchievementsController",
+    "Method": "DeleteAchievement",
+    "RelativePath": "api/Achievements/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.AchievementsController",
+    "Method": "GetUserAchievements",
+    "RelativePath": "api/Achievements/GetUserAchievements",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.AchievementsController",
+    "Method": "SearchAchievements",
+    "RelativePath": "api/Achievements/Search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keyword",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.AchievementsController",
+    "Method": "UpdateAchievement",
+    "RelativePath": "api/Achievements/Update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "achievement",
+        "Type": "Tracendbk.Models.Achievement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.AuthController",
+    "Method": "GoogleResponse",
+    "RelativePath": "api/Auth/google-response",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.AuthController",
+    "Method": "SignInWithGoogle",
+    "RelativePath": "api/Auth/signin-google",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.ProfileController",
+    "Method": "GetProfile",
+    "RelativePath": "api/Profile/GetProfile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.ProfileController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/Profile/UpdateProfile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Bio",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.UserController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/User/ForgotPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "Tracendbk.Models.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.UserController",
+    "Method": "RegisterAsync",
+    "RelativePath": "api/User/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usr",
+        "Type": "Tracendbk.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tracendbk.Controllers.UserController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/User/ResetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Tracendbk.Controllers.UserController\u002BResetPasswordModel",
+        "IsRequired": true
+      },
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "enteredCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
